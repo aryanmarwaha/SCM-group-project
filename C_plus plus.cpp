@@ -2,7 +2,7 @@
 using namespace std;
 class RECT
 {
-    public:
+    public:          //edited this file by armankang
     void area()
     {
         cout<<"Area of rectangle"<<endl;
@@ -22,10 +22,10 @@ class SHAPES : public RECT,public SQUARE
 {
 };
 
-int main()
+int main()    
 {
     SHAPES obj;
-    // obj.area(); (It will give "AMBIGUITY ERROR" as the compiler gets confused that of which class the function named "area" should it execute first)
+   //doing edit number 2
     obj.RECT::area(); 
     obj.SQUARE::area(); 
 }
